@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation | Using Javascript</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="./images/download.png" type="image/x-icon">
+</head>
+<body>
+
+<form action="#">
+  <input type="text" id="User-Name" placeholder="Enter Name, ex:- Boyella Raju" onkeyup="validation()">
+  <span id="name-error"></span>
+  <input type="tel" id="Phone-num" placeholder="ex:- 123-456-7890" onkeyup="validatePhone()">
+  <span id="phone-error"></span>
+  <input type="email" id="Email" placeholder="ex:- raju123@gmail.com" onkeyup="validateEmail()">
+  <span id="email-error"></span>
+  <textarea  id="contact-message" rows="5" placeholder="Enter your Message" onkeyup="validateMessage()"></textarea>
+  <span id="message-error"></span>
+  <button onclick="return validateForm()" id="final">submit</button>
+  <span id="submit-error"></span>
+</form>
+ 
+
+
+  <script src="./javascript/script.js"></script>
+</body>
+</html>
